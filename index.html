@@ -64,6 +64,10 @@
     font-weight: 700;
     color: var(--accent);
   }
+
+  .blc {
+    display: none;
+  }
 </style>
 </head>
 <body>
@@ -88,7 +92,8 @@
       const diff = target - now;
 
       if (diff <= 0) {
-        el.innerHTML = '<div class="done">🎉 C\'est le jour J !</div>';
+        el.innerHTML = '<div class="done"> HYXA EST LIBRE</div>';
+        document.getElementById("title").classList.add('blc')
         clearInterval(timer);
         return;
       }
